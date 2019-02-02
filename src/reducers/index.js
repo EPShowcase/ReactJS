@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
-import { counterReducer } from "./counter";
+import { bioReducer } from "./bio";
+import { skillsReducer } from "./skills";
+import { projectsReducer } from "./projects";
 
 export const rootReducer = combineReducers({
-  counterReducer
+  bioReducer, skillsReducer, projectsReducer
 });
