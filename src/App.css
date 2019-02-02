@@ -26,6 +26,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +40,9 @@ button {
   background-color: #444;
   border: none;
   color: white;
+}
+
+.brand-logo {
+  height: 40px;
+  margin-right: 10px;
 }
