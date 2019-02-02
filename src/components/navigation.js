@@ -6,12 +6,12 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem
+  NavLink
 } from 'reactstrap';
+
+import { NavLink as RRNavLink } from 'react-router-dom';
+
+import Brand from './brand'
 
 export default class Navigation extends React.Component {
   constructor(props) {
@@ -31,18 +31,21 @@ export default class Navigation extends React.Component {
     return (
       <div>
         <Navbar color="primary" dark expand="md">
-          <NavbarBrand href="/">EP Showcase</NavbarBrand>
+          <NavbarBrand href="/">
+            <Brand />
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
+
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-sm-auto" navbar>
               <NavItem>
-                <NavLink href="/bio/">Bio</NavLink>
+                <NavLink tag={RRNavLink} to="/" exact activeClassName="active">Bio</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/skills/">Skills</NavLink>
+                <NavLink tag={RRNavLink} to="/skills/" activeClassName="active">Skills</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/projects/">Projects</NavLink>
+                <NavLink tag={RRNavLink} to="/projects/" activeClassName="active">Projects</NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="https://github.com/EPShowcase">GitHub</NavLink>
