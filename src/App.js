@@ -21,18 +21,19 @@ class App extends Component {
             <Navigation />
             <br />
 
-            <Route path="/" exact render={() => {
-              return (<Bio />)
-            }} />
+            <div className="container">
+              <Route path="/" exact render={() => {
+                return (<Bio />)
+              }} />
 
-            <Route path="/skills/" render={() => {
-              return (<Skills />)
-            }} />
+              <Route path="/skills/" render={() => {
+                return (<Skills />)
+              }} />
 
-            <Route path="/projects/" render={() => {
-              return (<Projects />)
-            }} />
-
+              <Route path="/projects/" render={() => {
+                return (<Projects />)
+              }} />
+            </div>
           </div>
         </BrowserRouter>
       </Provider>

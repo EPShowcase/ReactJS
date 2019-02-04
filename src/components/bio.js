@@ -13,8 +13,9 @@ class BioComponent extends React.Component {
   render() {
     return (
       <div>
-        <Loading loading={this.props.loading} />
         <BioItem />
+        <br />
+        <Loading loading={this.props.loading} />
       </div>
     );
   }

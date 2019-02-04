@@ -29,15 +29,15 @@ export default class Navigation extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="header">
         <Navbar color="primary" dark expand="md">
-          <NavbarBrand href="/">
+          <NavbarBrand href="#">
             <Brand />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
 
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-sm-auto" navbar>
+            <Nav className="mr-auto" navbar>
               <NavItem>
                 <NavLink tag={RRNavLink} to="/" exact activeClassName="active">Bio</NavLink>
               </NavItem>
