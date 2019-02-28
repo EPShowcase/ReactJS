@@ -1,16 +1,10 @@
-# cra-redux-saga-template
-
-This project is an [Create React App ](https://github.com/facebookincubator/create-react-app) boilerplate with integration of Redux, and Redux-Saga for quick starting your redux applications with the power of Sagas / Generator Functions
-
-### [Demo](https://mmajdanski.github.io/cra-redux-saga-template/)
-
-Before starting with project, please headover to the [Create-React-App](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md) documentation.
+# EP Showcase - Demo project for React, Redux, Redux Saga
 
 ## Getting Started
 
 1. Clone this repo
 
-`https://github.com/mmajdanski/cra-redux-saga-template.git`
+`https://github.com/EPShowcase/React_JS`
 
 2. To run, go to project folder and run
 
@@ -32,7 +26,7 @@ For more create-react-app commands refer `package.json`
 
 ### Components
 
-Most of the generic layout is built in `/src/App.js` just as found in the original Create-React-App. The key thing to notice here is that we have included our one and only component to that file: namely `<CounterComponent />` which has been imported from our `/src/components` folder. I recommend you keep all of your components there unless you feel need to move them elsewhere.
+Most of the generic layout is built in `/src/App.js`. The key thing to notice here is that we have included our one and only component to that file: namely `<CounterComponent />` which has been imported from our `/src/components` folder. I recommend you keep all of your components there unless you feel need to move them elsewhere.
 
 ### The Redux Store
 
